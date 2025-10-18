@@ -197,6 +197,121 @@ body {
     color: #666;
     font-size: 0.9rem;
 }
+/* Pantry Items */
+.pantry-item {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.pantry-item:hover {
+    border-color: #4CAF50;
+    transform: translateY(-1px);
+}
+
+.item-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.item-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.expiration-badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.expiration-badge.expired {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.expiration-badge.expiring-soon {
+    background: #fff3e0;
+    color: #ef6c00;
+}
+
+.expiration-badge.expiring-warning {
+    background: #fff8e1;
+    color: #f9a825;
+}
+
+.expiration-badge.expiring-ok {
+    background: #e8f5e8;
+    color: #2e7d32;
+}
+
+.item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.expiration-date {
+    color: #666;
+}
+
+.auto-badge {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+}
+
+/* Item Actions */
+.item-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #f0f0f0;
+}
+
+.edit-expiration-btn, .delete-btn {
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.edit-expiration-btn {
+    background: #e3f2fd;
+    color: #1976d2;
+    border: 1px solid #bbdefb;
+}
+
+.edit-expiration-btn:hover {
+    background: #bbdefb;
+    transform: translateY(-1px);
+}
+
+.delete-btn {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+.delete-btn:hover {
+    background: #ffcdd2;
+    transform: translateY(-1px);
+}
 
 /* Responsive */
 @media (max-width: 480px) {
